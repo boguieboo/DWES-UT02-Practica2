@@ -112,7 +112,27 @@ $socios = [
         "dni" => "12345678A",
         "email" => "laura@example.com",
         "telefono" => "654321987",
-        ]
+     ],
+    
+    "002" => [
+        "id" => "002",
+        "nombre" => "Carlos",
+        "apellidos" => "López Díaz",
+        "dni" => "87654321B",
+        "email" => "carlos.lopez@example.com",
+        "telefono" => "611222333",
+    ],
+
+
+    "003" => [
+        "id" => "003",
+        "nombre" => "Ana",
+        "apellidos" => "Martínez Ruiz",
+        "dni" => "11223344C",
+        "email" => "ana.martinez@example.com",
+        "telefono" => "622333444",
+    ],
+
 ];
 
 
