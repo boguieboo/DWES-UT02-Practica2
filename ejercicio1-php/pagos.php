@@ -175,6 +175,74 @@ $socios = [
         ]
    ],
 ];
+
+/* ======================================================
+   5. SELECCIONAR UN SOCIO PARA MOSTRAR SUS DATOS
+======================================================= */
+
+$socio = $socios["001"]; // mostramos el socio 001
+
+/* ===========================
+   DATOS DE UN SOCIO
+   ===========================
+   Usamos echo para mostrar información en pantalla. */
+echo "<h1>Datos del socio 1</h1>";
+echo "<ul>";
+echo "<li><strong>Nombre:</strong> " . $socio['nombre'] . "</li>";
+echo "<li><strong>Apellidos:</strong> " . $socio['apellidos'] . "</li>";
+echo "<li><strong>DNI:</strong> " . $socio['dni'] . "</li>";
+echo "<li><strong>Email:</strong> " . $socio['email'] . "</li>";
+echo "<li><strong>Teléfono:</strong> " . $socio['telefono'] . "</li>";
+echo "</ul>";
+
+
+/* ======================================================
+   4. TABLA DE PAGOS
+======================================================= */
+
+echo "<h2>Pagos del año 2025</h2>";
+
+echo "<table>
+        <tr>
+            <th>Mes</th>
+            <th>Importe</th>
+            <th>Estado</th>
+            <th>Fecha de pago</th>
+        </tr>";
+
+$totalPagado = 0; //variable para sumar todos los pagos realizados inicializada a 0
+
+// recorremos los pagos. ($socio["pagos"] es un array asociativo donde las claves son los códigos de mes: "2025-01", "2025-02", etc.
+// $codigoMes variable que contiene la clave del array, es decir, el código de mes
+// $pago: variable que contiene los datos de ese mes
+foreach ($socio["pagos"] as $codigoMes => $pago) {
+
+    // Si está pendiente 
+    $style =  ($pago["estado"] === "Pendiente") ?  "background-color:#f8d7da; color:#721c24;" : "";
+    $fecha = $pago["fecha"] ?? " -"; //gurdamos la fecha a mostrar
+
+    // Si está pagado acumulamos total
+    if ($pago["estado"] === "Pagado") {
+        $totalPagado += $pago["importe"];
+    }
+
+    echo "<tr style='$style'>";
+    echo "<td>{$pago["mes"]}</td>";
+    echo "<td>{$pago["importe"]} €</td>";
+    echo "<td>{$pago["estado"]}</td>";
+    echo "<td>" . ($pago["fecha"] ?? "-") . "</td>";
+    echo "</tr>";
+}
+
+// total acumulado
+echo "<tr>
+        <td><strong>Total pagado</strong></td>
+        <td colspan='3'><strong>{$totalPagado} €</strong></td> 
+      </tr>";
+
+echo "</table>";
+
+
 ?>
  </body>
 </html>
