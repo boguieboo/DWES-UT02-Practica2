@@ -112,6 +112,20 @@ $socios = [
         "dni" => "12345678A",
         "email" => "laura@example.com",
         "telefono" => "654321987",
+        "pagos" => [
+            "2025-01" => ["mes" => "Enero", "importe" => 50, "estado" => "Pagado", "fecha" => "2025-01-03"],
+            "2025-02" => ["mes" => "Febrero", "importe" => 50, "estado" => "Pagado", "fecha" => "2025-02-05"],
+            "2025-03" => ["mes" => "Marzo", "importe" => 50, "estado" => "Pagado", "fecha" => "2025-03-04"],
+            "2025-04" => ["mes" => "Abril", "importe" => 50, "estado" => "Pagado", "fecha" => "2025-04-02"],
+            "2025-05" => ["mes" => "Mayo", "importe" => 50, "estado" => "Pagado", "fecha" => "2025-05-01"],
+            "2025-06" => ["mes" => "Junio", "importe" => 50, "estado" => "Pagado", "fecha" => "2025-06-03"],
+            "2025-07" => ["mes" => "Julio", "importe" => 50, "estado" => "Pagado", "fecha" => "2025-07-05"],
+            "2025-08" => ["mes" => "Agosto", "importe" => 50, "estado" => "Pagado", "fecha" => "2025-08-04"],
+            "2025-09" => ["mes" => "Septiembre", "importe" => 50, "estado" => "Pagado", "fecha" => "2025-09-02"],
+            "2025-10" => ["mes" => "Octubre", "importe" => 50, "estado" => "Pagado", "fecha" => "2025-10-03"],
+            "2025-11" => ["mes" => "Noviembre", "importe" => 50, "estado" => "Pagado", "fecha" => "2025-11-01"],
+            "2025-12" => ["mes" => "Diciembre", "importe" => 50, "estado" => "Pendiente", "fecha" => null],
+        ]
      ],
     
     "002" => [
@@ -121,6 +135,20 @@ $socios = [
         "dni" => "87654321B",
         "email" => "carlos.lopez@example.com",
         "telefono" => "611222333",
+        "pagos" => [
+            "2025-01" => ["mes" => "Enero", "importe" => 50, "estado" => "Pagado", "fecha" => "2025-01-03"],
+            "2025-02" => ["mes" => "Febrero", "importe" => 50, "estado" => "Pagado", "fecha" => "2025-02-05"],
+            "2025-03" => ["mes" => "Marzo", "importe" => 50, "estado" => "Pagado", "fecha" => "2025-03-04"],
+            "2025-04" => ["mes" => "Abril", "importe" => 50, "estado" => "Pagado", "fecha" => "2025-04-02"],
+            "2025-05" => ["mes" => "Mayo", "importe" => 50, "estado" => "Pagado", "fecha" => "2025-05-01"],
+            "2025-06" => ["mes" => "Junio", "importe" => 50, "estado" => "Pagado", "fecha" => "2025-06-03"],
+            "2025-07" => ["mes" => "Julio", "importe" => 50, "estado" => "Pagado", "fecha" => "2025-07-05"],
+            "2025-08" => ["mes" => "Agosto", "importe" => 50, "estado" => "Pagado", "fecha" => "2025-08-04"],
+            "2025-09" => ["mes" => "Septiembre", "importe" => 50, "estado" => "Pagado", "fecha" => "2025-09-02"],
+            "2025-10" => ["mes" => "Octubre", "importe" => 50, "estado" => "Pagado", "fecha" => "2025-10-03"],
+            "2025-11" => ["mes" => "Noviembre", "importe" => 50, "estado" => "Pendiente", "fecha" => null],
+            "2025-12" => ["mes" => "Diciembre", "importe" => 50, "estado" => "Pendiente", "fecha" => null],
+        ]
     ],
 
 
@@ -131,13 +159,22 @@ $socios = [
         "dni" => "11223344C",
         "email" => "ana.martinez@example.com",
         "telefono" => "622333444",
-    ],
-
+        "pagos" => [
+            "2025-01" => ["mes" => "Enero", "importe" => 50, "estado" => "Pagado", "fecha" => "2025-01-03"],
+            "2025-02" => ["mes" => "Febrero", "importe" => 50, "estado" => "Pagado", "fecha" => "2025-02-05"],
+            "2025-03" => ["mes" => "Marzo", "importe" => 50, "estado" => "Pagado", "fecha" => "2025-03-04"],
+            "2025-04" => ["mes" => "Abril", "importe" => 50, "estado" => "Pagado", "fecha" => "2025-04-02"],
+            "2025-05" => ["mes" => "Mayo", "importe" => 50, "estado" => "Pagado", "fecha" => "2025-05-01"],
+            "2025-06" => ["mes" => "Junio", "importe" => 50, "estado" => "Pagado", "fecha" => "2025-06-03"],
+            "2025-07" => ["mes" => "Julio", "importe" => 50, "estado" => "Pagado", "fecha" => "2025-07-05"],
+            "2025-08" => ["mes" => "Agosto", "importe" => 50, "estado" => "Pagado", "fecha" => "2025-08-04"],
+            "2025-09" => ["mes" => "Septiembre", "importe" => 50, "estado" => "Pagado", "fecha" => "2025-09-02"],
+            "2025-10" => ["mes" => "Octubre", "importe" => 50, "estado" => "Pagado", "fecha" => "2025-10-03"],
+            "2025-11" => ["mes" => "Noviembre", "importe" => 50, "estado" => "Pendiente", "fecha" => null],
+            "2025-12" => ["mes" => "Diciembre", "importe" => 50, "estado" => "Pendiente", "fecha" => null],
+        ]
+   ],
 ];
-
-
-
-
 ?>
  </body>
 </html>
