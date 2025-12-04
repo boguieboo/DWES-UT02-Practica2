@@ -99,10 +99,24 @@
             echo $puntajes["2024"][1][0] . " - Nota en 2024: " . $puntajes["2024"][1][1] . ", 
             " . $puntajes["2024"][1][2] . "<br>";
             ?>
-
-
-
 */
+
+/*  ===========================
+3. DEFINIR ARRAY ASOCIATIVO MULTIDIMENSIONAL
+    =========================== */
+$socios = [
+     "001" => [
+        "id" => 1,
+        "nombre" => "Laura",
+        "apellidos" => "García Pérez",
+        "dni" => "12345678A",
+        "email" => "laura@example.com",
+        "telefono" => "654321987",
+        ]
+];
+
+
+
 
 ?>
  </body>
