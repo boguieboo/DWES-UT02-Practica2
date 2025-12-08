@@ -2,6 +2,7 @@ package es.dwes.UT01;
 
 import java.io.Serializable;
 import java.util.List;
+import java.util.Map;
 
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.inject.Named;
@@ -46,5 +47,32 @@ public class HelloBean implements Serializable {
         public double getPrecio() { return precio; }
     }
 // Práctica 2: Crea aquí la clase que defina a un usuario
-    
+// Clase interna para usuarios
+    public static class Usuario {
+        private String nombre;
+        private String apellidos;
+        private String dni;
+        private String email;
+        private int edad;
+        private Map<String, Double> pagos;
+
+        public Usuario(String nombre, String apellidos, String dni, String email, int edad,
+                       Map<String, Double> pagos) {
+            this.nombre = nombre;
+            this.apellidos = apellidos;
+            this.dni = dni;
+            this.email = email;
+            this.edad = edad;
+            this.pagos = pagos;
+        }
+
+        public String getNombre() { return nombre; }
+        public String getApellidos() { return apellidos; }
+        public String getDni() { return dni; }
+        public String getEmail() { return email; }
+        public int getEdad() { return edad; }
+        public Map<String, Double> getPagos() { return pagos; }
+    }
+
+
 }
