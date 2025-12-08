@@ -74,5 +74,35 @@ public class HelloBean implements Serializable {
         public Map<String, Double> getPagos() { return pagos; }
     }
 
+ // Lista de usuarios
+ public List<Usuario> getUsuarios() {
+    return List.of(
+        new Usuario(
+            "María",
+            "López García",
+            "12345678A",
+            "maria@example.com",
+            28,
+            Map.of("enero", 20.0, "febrero", 30.0)
+        ),
+        new Usuario(
+            "Juan",
+            "Pérez Sánchez",
+            "87654321B",
+            "juan@example.com",
+            32,
+            Map.of("enero", 10.0, "marzo", 25.5)
+        ),
+        new Usuario(
+            "Lucía",
+            "Martín Ruiz",
+            "11223344C",
+            "lucia@example.com",
+            22,
+            Map.of("enero", 50.0)
+        )
+    );
+}
+
 
 }
