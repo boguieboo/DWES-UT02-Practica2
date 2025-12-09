@@ -75,7 +75,7 @@ public class HelloBean implements Serializable {
     }
 
  // Lista de usuarios
- public List<Usuario> getUsuarios() {
+public List<Usuario> getUsuarios() {
     return List.of(
         new Usuario(
             "María",
@@ -99,10 +99,25 @@ public class HelloBean implements Serializable {
             "11223344C",
             "lucia@example.com",
             22,
-            Map.of("enero", 50.0)
+            Map.of("enero", 100.0)
         )
     );
 }
+
+// Total del usuario //
+public double calcularTotal(Usuario u) {
+    double total = 0.0;
+
+    for (Double cantidad : u.getPagos().values()) {
+        if (cantidad != null) {
+            total += cantidad;
+        }
+    }
+
+    return total;
+}
+
+
 
 
 }
